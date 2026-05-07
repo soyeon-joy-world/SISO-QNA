@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="kr">
+<html lang="ko">
 
 <head>
     <meta charset="utf-8">
@@ -7,52 +7,15 @@
     <title>SISO_Q&A</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: 'Godo';
-            font-style: normal;
-            font-weight: 400;
-            src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
-          }
-          
-          @font-face {
-            font-family: 'Godo';
-            font-style: normal;
-            font-weight: 700;
-            src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
-          }        
-          body {
-            font-family: 'GoDo', sans-serif;
-            background: linear-gradient(to bottom right, #fffeff, #d7fffe);
-        }
+    <link rel="stylesheet" href="../css/styles.css">
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCXQJZQ9Y7"></script>
+    <script src="../js/analytics.js"></script>
 
-        .custom-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .custom-buttons {
-            width: 25%;
-            margin-top: 0;
-            padding-top: 0;
-        }
-    </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCXQJZQ9Y7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JCXQJZQ9Y7');
-</script>
+    <!-- FAQ Loader -->
+    <script src="../js/faq_loader.js"></script>
+</head>
 
 <body class="d-flex flex-column min-vh-100">
 
@@ -75,8 +38,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button id="collapseOneButton" class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
-                    style="background-color: #FFFACD;">
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     #1 기숙사비 납부 어떻게 하나요?
                 </button>
             </h2>
@@ -90,8 +52,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-                    style="background-color: #FFFACD;">
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     #2 기숙사 언제 들어갈 수 있나요?
                 </button>
             </h2>
@@ -106,8 +67,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
-                    style="background-color: #FFFACD;">
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     #3 통금 있나요? 기숙사안에서 요리할 수 있나요?
                 </button>
             </h2>
@@ -122,8 +82,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
-                    style="background-color: #FFFACD;">
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     #4 기숙사에서 소포나 편지 받을 수 있나요?
                 </button>
             </h2>
@@ -153,6 +112,5 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
         </script>
 </body>
-</head>
 
 </html>

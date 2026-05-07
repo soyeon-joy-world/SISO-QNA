@@ -1,60 +1,36 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SISO_Q&A</title>
+    
+    <!-- External CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Ubuntu:wght@500&display=swap');
-
-        body {
-            font-family: 'Ubuntu', sans-serif;
-            background: linear-gradient(to bottom right,  #fffeff, #d7fffe);
-        }
-        .custom-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-          }
-      
-          .custom-buttons {
-            width: 200px;
-            margin-top: 0;
-            padding-top: 0;
-          }
-    </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCXQJZQ9Y7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JCXQJZQ9Y7');
-</script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCXQJZQ9Y7"></script>
+    <script src="js/analytics.js"></script>
+</head>
 
 <body class="d-flex flex-column min-vh-100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-white ms-2">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" width="40" height="40" alt="Hello">
+            Hi we are SISO
+        </a>
+        <a class="navbar-brand" href="korean/kindex.html">
+            <img src="images/globe.png" class="ml-auto" width="20" height="20" alt="">
+            <span style="font-size: 14px;">K/R</span>
+        </a>
+    </nav>
 
-  <nav class="navbar navbar-white ms-2">
-    <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" width="40" height="40" alt="Hello">
-        Hi we are SISO
-    </a>
-    <a class="navbar-brand" href="korean/kindex.html">
-        <img src="images/globe.png" class="ml-auto" width="20" height="20" alt="">
-        <span style="font-size: 14px;">K/R</span>
-    </a>
-    
-</nav>
-    <!-- main -->
+    <!-- Main Content -->
     <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
             <div class="m-3 p-3 text-black text-center">
@@ -63,15 +39,18 @@
             </div>
         </div>
     </div>
-   <div class="container mt-0 custom-container">
-    <div class="d-grid gap-3 custom-buttons">
-        <a href="RC.html" class="btn  btn-lg" style="background-color: #C0FAF6;">About RC</a>
-        <a href="timetable.html" class="btn btn-lg" style="background-color: #AACDFA;">Timetable</a>
-        <a href="dorm.html" class="btn btn-lg" style="background-color: #9FE4FA;">Residence hall</a>
-        <a href="ssu.html" class="btn btn-lg" style="background-color: #B9C1FA;">SSU</a>
-    </div>
-  </div>
 
+    <!-- Buttons Section -->
+    <div class="container mt-0 custom-container">
+        <div class="d-grid gap-3 custom-buttons">
+            <a href="RC.html" class="btn btn-lg btn-rc">About RC</a>
+            <a href="timetable.html" class="btn btn-lg btn-timetable">Timetable</a>
+            <a href="dorm.html" class="btn btn-lg btn-dorm">Residence hall</a>
+            <a href="ssu.html" class="btn btn-lg btn-ssu">SSU</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="mt-auto">
         <div class="container-fluid py-3 text-black">
             <div class="m-0">
@@ -83,10 +62,9 @@
         </div>
     </footer>
 
+    <!-- External JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
-</head>
-
 </html>

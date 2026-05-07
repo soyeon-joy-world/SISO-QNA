@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Ubuntu:wght@500&display=swap');
+
+@font-face {
+    font-family: 'Godo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Godo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
+}
+
+/* Base Styles */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(to bottom right, #fffeff, #d7fffe);
+}
+
+html[lang="ko"] body {
+    font-family: 'Godo', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Custom Container for centering content */
+.custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Button Container - Index Page */
+.custom-buttons {
+    width: 200px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.custom-buttons .btn {
+    border: 0;
+}
+
+.btn-rc {
+    background-color: #C0FAF6;
+}
+
+.btn-timetable {
+    background-color: #AACDFA;
+}
+
+.btn-dorm {
+    background-color: #9FE4FA;
+}
+
+.btn-ssu {
+    background-color: #B9C1FA;
+}
+
+/* Accordion Button Background */
+.accordion-button {
+    background-color: #FFFACD;
+}
+
+/* Check and Cross Marks for RC page */
+.check-mark {
+    color: green;
+    margin-left: 5px;
+}
+
+.cross-mark {
+    color: red;
+    margin-left: 5px;
+}
+
+/* Navigation adjustments */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Footer styles */
+footer {
+    background-color: transparent;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-buttons {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+}

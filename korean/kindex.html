@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="kr">
+<html lang="ko">
 
 <head>
     <meta charset="utf-8">
@@ -7,51 +7,12 @@
     <title>SISO_Q&A</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <style>
-        @font-face {
-            font-family: 'Godo';
-            font-style: normal;
-            font-weight: 400;
-            src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
-          }
-          
-          @font-face {
-            font-family: 'Godo';
-            font-style: normal;
-            font-weight: 700;
-            src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
-          }
+    <link rel="stylesheet" href="../css/styles.css">
 
-        body {
-            font-family: 'Godo', sans-serif;
-            background: linear-gradient(to bottom right,  #fffeff, #d7fffe);
-        }
-        .custom-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-          }
-      
-          .custom-buttons {
-            width: 200px;
-            margin-top: 0;
-            padding-top: 0;
-          }
-    </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCXQJZQ9Y7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JCXQJZQ9Y7');
-</script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCXQJZQ9Y7"></script>
+    <script src="../js/analytics.js"></script>
+</head>
 
 <body class="d-flex flex-column min-vh-100">
 
@@ -77,10 +38,10 @@
     </div>
    <div class="container mt-0 custom-container">
     <div class="d-grid gap-3 custom-buttons">
-        <a href="krc.html" class="btn  btn-lg" style="background-color: #C0FAF6;">About RC</a>
-        <a href="ktime.html" class="btn btn-lg" style="background-color: #AACDFA;">시간표</a>
-        <a href="kdorm.html" class="btn btn-lg" style="background-color: #9FE4FA;">기숙사</a>
-        <a href="kssu.html" class="btn btn-lg" style="background-color: #B9C1FA;">학교생활</a>
+        <a href="krc.html" class="btn btn-lg btn-rc">About RC</a>
+        <a href="ktime.html" class="btn btn-lg btn-timetable">시간표</a>
+        <a href="kdorm.html" class="btn btn-lg btn-dorm">기숙사</a>
+        <a href="kssu.html" class="btn btn-lg btn-ssu">학교생활</a>
     </div>
   </div>
 
@@ -99,6 +60,5 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
         </script>
 </body>
-</head>
 
 </html>

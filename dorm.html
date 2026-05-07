@@ -1,49 +1,27 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SISO_Q&A</title>
+    <title>SISO_Q&A - Residence Hall</title>
+    
+    <!-- External CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Ubuntu:wght@500&display=swap');
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCXQJZQ9Y7"></script>
+    <script src="js/analytics.js"></script>
 
-        body {
-            font-family: 'Ubuntu', sans-serif;
-            background: linear-gradient(to bottom right, #fffeff, #d7fffe);
-        }
-
-        .custom-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .custom-buttons {
-            width: 25%;
-            margin-top: 0;
-            padding-top: 0;
-        }
-    </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCXQJZQ9Y7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JCXQJZQ9Y7');
-</script>
+    <!-- FAQ Loader -->
+    <script src="js/faq_loader.js"></script>
+</head>
 
 <body class="d-flex flex-column min-vh-100">
-
+    <!-- Navigation -->
     <nav class="navbar navbar-white ms-2">
         <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" width="40" height="40" alt="Hello">
@@ -51,6 +29,7 @@
         </a>
     </nav>
 
+    <!-- Page Header -->
     <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
             <div class="m-3 p-3 text-black text-center">
@@ -59,27 +38,29 @@
         </div>
     </div>
 
+    <!-- FAQ Accordion -->
     <div class="accordion" id="accordionExample">
+        <!-- FAQ #1 -->
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button id="collapseOneButton" class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
-                    style="background-color: #FFFACD;">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     #1 How can I pay for dormitory fees?
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    You need to make the payment in cash. <strong><mark>Overseas transfer is not possible</strong>.</mark>
-                    <br> <strong>If you don't pay, it won't be possible to issue the Certificate of Residence.</strong>
+                    You need to make the payment in cash. <strong><mark>Overseas transfer is not possible</mark></strong>.
+                    <br><strong>If you don't pay, it won't be possible to issue the Certificate of Residence.</strong>
                 </div>
             </div>
         </div>
+
+        <!-- FAQ #2 -->
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
-                    style="background-color: #FFFACD;">
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     #2 When is the check-in date for the dormitory?
                 </button>
             </h2>
@@ -91,12 +72,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- FAQ #3 -->
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
-                    style="background-color: #FFFACD;">
-                    #3 Are there any carfew? Can I cook inside the residence hall?
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    #3 Are there any curfew? Can I cook inside the residence hall?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -107,11 +89,12 @@
                 </div>
             </div>
         </div>
+
+        <!-- FAQ #4 -->
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
-                    style="background-color: #FFFACD;">
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     #4 Is it possible to have packages and letters delivered there?
                 </button>
             </h2>
@@ -123,11 +106,12 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="mt-auto">
         <div class="container-fluid py-3 text-black">
             <div class="m-0">
                 <p>
-                    * For more detailed information, please refer to the dormitory website. //link below <br>
+                    * For more detailed information, please refer to the dormitory website.<br>
                     <a href="https://ssudorm.ssu.ac.kr:444/SShostel/homepage/english/introduce/intro_01.html"
                         class="text-black">[Soongsil University Residence Hall]</a>
                 </p>
@@ -135,10 +119,9 @@
         </div>
     </footer>
 
+    <!-- External JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
-</head>
-
 </html>
